@@ -13,6 +13,8 @@
 &#xD;
 It publishes and monitors values from OSHI with the help of Spring. On Windows the information is supplemented with OpenHardwareMonitor with a bit of help from OhmJni4Net.&#xD;
 &#xD;
+https://monitee.app/get-started/
+&#xD;
 https://play.google.com/store/apps/details?id=com.krillsson.monitee</Overview>
   <Category>Tools:</Category>
   <WebUI/>
