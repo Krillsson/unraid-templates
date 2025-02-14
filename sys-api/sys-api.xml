@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>sys-API</Name>
+  <Repository>krillsson/sys-api</Repository>
+  <Registry>https://registry.hub.docker.com/r/krillsson/sys-api</Registry>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/Krillsson/sys-API/issues</Support>
+  <Project>https://github.com/Krillsson/sys-API/</Project>
+  <Overview>This is the server backend for the Android app Monitee. System API (sys-API) provide a GraphQL API to your computers hardware.&#xD;
+&#xD;
+It publishes and monitors values from OSHI with the help of Spring. On Windows the information is supplemented with OpenHardwareMonitor with a bit of help from OhmJni4Net.&#xD;
+&#xD;
+https://play.google.com/store/apps/details?id=com.krillsson.monitee</Overview>
+  <Category>Tools:</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/Krillsson/unraid-templates/refs/heads/main/sys-api/logo.png</Icon>
+  <ExtraParams>--pid=host --restart unless-stopped </ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1739555619</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Configuration directory" Target="/config" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/docker/sys-api/config</Config>
+  <Config Name="Data directory" Target="/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/docker/sys-api/data</Config>
+  <Config Name="Devices" Target="/dev" Default="/dev" Mode="ro" Description="To allow sys-API to monitor HDD devices" Type="Path" Display="advanced" Required="false" Mask="false">/dev</Config>
+  <Config Name="Mounts" Target="/mnt" Default="/mnt" Mode="ro" Description="To allow sys-API to monitor filesystems" Type="Path" Display="advanced" Required="false" Mask="false">/mnt</Config>
+  <Config Name="Logs directory" Target="/var/log" Default="/var/log" Mode="ro" Description="To allow sys-API to read log files. Has to be specified in configuration.yml" Type="Path" Display="advanced" Required="false" Mask="false">/var/log</Config>
+  <Config Name="Udev path" Target="/run/udev" Default="/run/udev" Mode="ro" Description="To allow sys-API to read device names from udev" Type="Path" Display="advanced" Required="false" Mask="false">/run/udev</Config>
+  <Config Name="Docker socket" Target="/var/run/docker.sock" Default="/var/run/docker.sock" Mode="rw" Description="" Type="Path" Display="advanced" Required="false" Mask="false">/var/run/docker.sock</Config>
+</Container>
