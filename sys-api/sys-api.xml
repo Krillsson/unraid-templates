@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>sys-API</Name>
+  <Name>MoniteeAgent</Name>
   <Repository>krillsson/sys-api</Repository>
   <Registry>https://registry.hub.docker.com/r/krillsson/sys-api</Registry>
   <Network>host</Network>
@@ -9,21 +9,23 @@
   <Privileged>false</Privileged>
   <Support>https://github.com/Krillsson/sys-API/issues</Support>
   <Project>https://github.com/Krillsson/sys-API/</Project>
-  <Overview>This is the server backend for the Android app Monitee. System API (sys-API) provide a GraphQL API to your computers hardware.&#xD;
-&#xD;
-It publishes and monitors values from OSHI with the help of Spring. On Windows the information is supplemented with OpenHardwareMonitor with a bit of help from OhmJni4Net.&#xD;
-&#xD;
-https://monitee.app/get-started/
-&#xD;
-https://play.google.com/store/apps/details?id=com.krillsson.monitee</Overview>
+  <Overview>Monitee Agent or sys-API, is the backend for the Monitee Android app, providing a GraphQL API to access your server&#x2019;s hardware data.&#xD;
+    &#xD;
+    &#x1F4CC; Features:&#xD;
+    &#x2705; Real-time server metrics&#xD;
+    &#x2705; Threshold based monitors and events&#xD;
+    &#x2705; Control docker containers and read their logs&#xD;
+    &#xD;
+    &#x1F517; Get Started: https://monitee.app/get-started/&#xD;
+    &#x1F4F1; Download the Monitee App: https://play.google.com/store/apps/details?id=com.krillsson.monitee</Overview>
   <Category>Tools:</Category>
   <WebUI/>
   <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/Krillsson/unraid-templates/refs/heads/main/sys-api/logo.png</Icon>
+  <Icon>https://raw.githubusercontent.com/Krillsson/sys-API/refs/heads/master/header-square.png</Icon>
   <ExtraParams>--pid=host --restart unless-stopped </ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1739555619</DateInstalled>
+  <DateInstalled>1739607034</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
