@@ -21,7 +21,7 @@
   <Category>Tools:</Category>
   <WebUI/>
   <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/Krillsson/sys-API/refs/heads/master/header-square.png</Icon>
+  <Icon>https://raw.githubusercontent.com/Krillsson/unraid-templates/refs/heads/main/sys-api/logo.png</Icon>
   <ExtraParams>--pid=host --restart unless-stopped </ExtraParams>
   <PostArgs/>
   <CPUset/>
