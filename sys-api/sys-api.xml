@@ -1,15 +1,15 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>MoniteeAgent</Name>
+  <Name>Monitee agent</Name>
   <Repository>krillsson/sys-api</Repository>
   <Registry>https://registry.hub.docker.com/r/krillsson/sys-api</Registry>
   <Network>host</Network>
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://github.com/Krillsson/sys-API/issues</Support>
-  <Project>https://github.com/Krillsson/sys-API/</Project>
-  <Overview>Monitee Agent or sys-API, is the backend for the Monitee Android app, providing a GraphQL API to access your server&#x2019;s hardware data.&#xD;
+  <Support>https://github.com/Krillsson/monitee-agent/issues</Support>
+  <Project>https://github.com/Krillsson/monitee-agent/</Project>
+  <Overview>Backend for Monitee, the server monitoring Android app.
     &#xD;
     &#x1F4CC; Features:&#xD;
     &#x2705; Real-time server metrics&#xD;
