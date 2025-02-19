@@ -11,13 +11,14 @@
   <Project>https://github.com/Krillsson/monitee-agent/</Project>
   <Overview>Backend for Monitee, the server monitoring Android app.
     &#xD;
+    &#x1F517; Get Started: https://monitee.app/unraid/&#xD;
+    &#x1F4F1; Download the Monitee App: https://play.google.com/store/apps/details?id=com.krillsson.monitee
+    &#xD;
     &#x1F4CC; Features:&#xD;
     &#x2705; Real-time server metrics&#xD;
     &#x2705; Threshold based monitors and events&#xD;
     &#x2705; Control docker containers and read their logs&#xD;
-    &#xD;
-    &#x1F517; Get Started: https://monitee.app/get-started/&#xD;
-    &#x1F4F1; Download the Monitee App: https://play.google.com/store/apps/details?id=com.krillsson.monitee</Overview>
+  </Overview>
   <Category>Tools:</Category>
   <WebUI/>
   <TemplateURL/>
@@ -29,11 +30,13 @@
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="Configuration directory" Target="/config" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/docker/sys-api/config</Config>
-  <Config Name="Data directory" Target="/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/docker/sys-api/data</Config>
-  <Config Name="Devices" Target="/dev" Default="/dev" Mode="ro" Description="To allow sys-API to monitor HDD devices" Type="Path" Display="advanced" Required="false" Mask="false">/dev</Config>
-  <Config Name="Mounts" Target="/mnt" Default="/mnt" Mode="ro" Description="To allow sys-API to monitor filesystems" Type="Path" Display="advanced" Required="false" Mask="false">/mnt</Config>
-  <Config Name="Logs directory" Target="/var/log" Default="/var/log" Mode="ro" Description="To allow sys-API to read log files. Has to be specified in configuration.yml" Type="Path" Display="advanced" Required="false" Mask="false">/var/log</Config>
-  <Config Name="Udev path" Target="/run/udev" Default="/run/udev" Mode="ro" Description="To allow sys-API to read device names from udev" Type="Path" Display="advanced" Required="false" Mask="false">/run/udev</Config>
+  <Config Name="Configuration directory" Target="/config" Default="" Mode="rw" Description="" Type="Path"
+          Display="always" Required="true" Mask="false"/>
+  <Config Name="Data directory" Target="/data" Default="" Mode="rw" Description="" Type="Path" Display="always"
+          Required="true" Mask="false"/>
+  <Config Name="Devices" Target="/dev" Default="/dev" Mode="ro" Description="To allow Monitee agent to monitor HDD devices" Type="Path" Display="advanced" Required="false" Mask="false">/dev</Config>
+  <Config Name="Mounts" Target="/mnt" Default="/mnt" Mode="ro" Description="To allow Monitee agent to monitor filesystems" Type="Path" Display="advanced" Required="false" Mask="false">/mnt</Config>
+  <Config Name="Logs directory" Target="/var/log" Default="/var/log" Mode="ro" Description="To allow Monitee agent to read log files. Has to be specified in configuration.yml" Type="Path" Display="advanced" Required="false" Mask="false">/var/log</Config>
+  <Config Name="Udev path" Target="/run/udev" Default="/run/udev" Mode="ro" Description="To allow Monitee agent to read device names from udev" Type="Path" Display="advanced" Required="false" Mask="false">/run/udev</Config>
   <Config Name="Docker socket" Target="/var/run/docker.sock" Default="/var/run/docker.sock" Mode="rw" Description="" Type="Path" Display="advanced" Required="false" Mask="false">/var/run/docker.sock</Config>
 </Container>
