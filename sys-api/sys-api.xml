@@ -39,4 +39,5 @@
   <Config Name="Logs directory" Target="/var/log" Default="/var/log" Mode="ro" Description="To allow Monitee agent to read log files. Has to be specified in configuration.yml" Type="Path" Display="advanced" Required="false" Mask="false">/var/log</Config>
   <Config Name="Udev path" Target="/run/udev" Default="/run/udev" Mode="ro" Description="To allow Monitee agent to read device names from udev" Type="Path" Display="advanced" Required="false" Mask="false">/run/udev</Config>
   <Config Name="Docker socket" Target="/var/run/docker.sock" Default="/var/run/docker.sock" Mode="rw" Description="" Type="Path" Display="advanced" Required="false" Mask="false">/var/run/docker.sock</Config>
+  <Config Name="os-release" Target="/etc/os-release" Default="/etc/os-release" Mode="ro" Description="To allow Monitee agent to read the correct OS info" Type="Path" Display="advanced" Required="false" Mask="false">/etc/os-release</Config>
 </Container>
