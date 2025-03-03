@@ -30,6 +30,7 @@
   <DonateText/>
   <DonateLink/>
   <Requires/>
+  <WebUI>http://[IP]:[PORT:8080]/graphiql?path=/graphql</WebUI>
   <Config Name="Configuration directory" Target="/config" Default="" Mode="rw" Description="" Type="Path"
           Display="always" Required="true" Mask="false"/>
   <Config Name="Data directory" Target="/data" Default="" Mode="rw" Description="" Type="Path" Display="always"
