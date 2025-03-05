@@ -20,7 +20,6 @@
     &#x2705; Control docker containers and read their logs&#xD;
   </Overview>
   <Category>Tools:</Category>
-  <WebUI/>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/Krillsson/unraid-templates/refs/heads/main/sys-api/logo.png</Icon>
   <ExtraParams>--pid=host --restart unless-stopped </ExtraParams>
